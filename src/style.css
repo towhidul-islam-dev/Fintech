@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * Root */
+:root {
+  --primary-bg-clr: #101521;
+  --font-clr: #ffffff;
+  --clr1: #ffcb66;
+  --clr2: #acd8b5;
+  --clr3: #101722;
+  --clr4: #f6bde9;
+  --clr5: #0d0d0d;
+  --clr6: #272e39;
+  --clr7: #2a6646;
+  --clr8: #d5c8b5;
+  --clr9: #000000;
+  --clr10: #262e36;
+  --clr11: #c6c6c6;
+}
+body {
+  @apply bg-[#101521];
+}
+.container {
+  @apply w-11/12 max-w-7xl m-0 m-auto p-8;
+}
+.hero_title {
+  @apply text-4xl capitalize font-bold;
+}
+.digital {
+  position: relative;
+  padding-left: 20%;
+}
+.digital::after {
+  position: absolute;
+  content: "world class";
+  text-transform: capitalize;
+  border: 2px solid rgb(245, 242, 242);
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  outline: 2px solid rgb(240, 239, 239);
+  outline-offset: 0.25rem;
+  top: 45%;
+  left: 0%;
+  transform: rotate(-25deg);
+}
+.fa-arrow-up {
+  @apply transform rotate-45 text-[#101521] ml-2;
+}
+.fa-play {
+  @apply text-gray-800;
+}
+.fa-star {
+  @apply text-4xl text-[#ffcb66];
+}
+.header-btn {
+  @apply border-none outline-none capitalize font-bold bg-[#ffcb66] text-[#101521] py-2 px-8 rounded-3xl;
+}
