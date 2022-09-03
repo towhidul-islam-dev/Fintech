@@ -659,6 +659,10 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1241,10 +1245,19 @@ body {
 @media (max-width: 768px) {
   .personal_comment {
     max-width: 16rem;
+    font-size: 0.7rem;
   }
 
   .personal_comment-1 {
-    transform: translate(-50%, -30%);
+    transform: translate(-70%, -30%);
+  }
+
+  .personal_comment h2 {
+    font-size: 0.8rem;
+  }
+
+  .person_img {
+    max-width: 4rem;
   }
 }
 
@@ -1268,7 +1281,7 @@ body {
     padding: 2rem;
   }
 
-  .btn_container {
+  .client-btn_container {
     position: unset;
     bottom: unset;
     left: unset;
@@ -1301,20 +1314,42 @@ body {
   flex: 1 1 55%;
 }
 
+.money_title {
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  line-height: 1.1;
+}
+
 .money_text {
   position: relative;
   /* margin-left: 1rem; */
   padding-left: 1rem;
+  padding-block: 2rem;
 }
 
 .money_text::before {
   position: absolute;
   content: "";
   width: 0.15rem;
-  height: 100%;
+  height: calc(100% - (4rem));
   color: white;
   background-color: #fff;
   left: 0%;
+}
+
+@media (max-width: 610px) {
+  .money_container *:nth-child(1) {
+    flex: 1 1 100%;
+  }
+
+  .money_container *:nth-child(2) {
+    flex: 1 1 100%;
+  }
+
+  .money_img {
+    max-width: 100%;
+  }
 }
 
 /* ! Money Container End */
