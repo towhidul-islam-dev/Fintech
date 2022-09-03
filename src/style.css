@@ -77,6 +77,42 @@ body {
   max-width: 75%;
   z-index: 100;
 }
+.mob_nav {
+  position: fixed;
+  height: 100vh;
+  background-color: #3f424c;
+  color: #c6c6c6;
+  inset: 0rem 0rem 0rem 40%;
+  padding-block-start: 5rem;
+  padding-inline-start: 2rem;
+  right: 0%;
+  top: 0%;
+  z-index: -100;
+}
+.mob_nav li + li {
+  margin-top: 0.5rem;
+}
+.mob_nav li a {
+  font-size: clamp(0.8rem, 5vw + 0.8rem, 1.2rem);
+  font-weight: bold;
+  transition: color 300ms ease-in;
+}
+.mob_nav li a:hover {
+  color: #c9a84e;
+}
+.nav_content {
+  position: relative;
+}
+.mobile_nav {
+  /* position: absolute; */
+  z-index: 999;
+}
+@media (min-width: 35rem) {
+  .mob_nav {
+    display: none;
+    /* z-index: -1; */
+  }
+}
 @media (max-width: 600px) {
   .header_content {
     /* border: 2px solid yellow; */

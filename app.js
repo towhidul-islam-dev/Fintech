@@ -11,7 +11,7 @@ const pricingSecion = document.querySelector(".pricing-section");
 const operatorBtn = document.querySelectorAll(".operator_btn");
 const deskNav = document.querySelector(".desk_nav");
 const mobNav = document.querySelector(".mob_nav");
-const faBars = document.querySelector(".fa-bars");
+const faBars = document.querySelector(".mob");
 
 console.log(faBars);
 
@@ -21,6 +21,15 @@ if (deskNav.classList.contains("hidden")) {
   console.log("right");
   faBars.addEventListener("click", (e) => {
     e.preventDefault();
+    if (faBars.classList.contains("fa-bars")) {
+      const btnClass = faBars.classList;
+      btnClass.replace("fa-bars", "fa-multiply");
+      mobNav.classList.remove("hidden");
+    } else {
+      const btnClass = faBars.classList;
+      btnClass.replace("fa-multiply", "fa-bars");
+      mobNav.classList.add("hidden");
+    }
   });
 }
 
