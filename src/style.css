@@ -66,8 +66,16 @@ body {
 .header_content {
   max-width: 80%;
 }
-.digital {
+.header_text {
   position: relative;
+}
+.header_title {
+  font-size: clamp(2.5rem, 10vw + 1.5rem, 12rem);
+  position: relative;
+  line-height: 1.2;
+}
+.digital {
+  /* position: relative; */
 }
 .round_img {
   /* border: 2px solid red; */
@@ -76,10 +84,10 @@ body {
   aspect-ratio: 1 /1;
   border-radius: 50%;
   overflow: hidden;
-  outline: 2px solid blue;
+  outline: 3px solid #e68e09;
   outline-offset: 10px;
-  top: 10%;
-  right: -26%;
+  top: 5%;
+  right: 6%;
 }
 
 .round_img img {
