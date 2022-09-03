@@ -30,6 +30,7 @@ if (deskNav.classList.contains("hidden")) {
       btnClass.replace("fa-multiply", "fa-bars");
       mobNav.classList.add("hidden");
     }
+    mobNav.classList.toggle("mob_nav-animation");
   });
 }
 
