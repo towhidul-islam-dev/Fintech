@@ -77,6 +77,32 @@ body {
   max-width: 75%;
   z-index: 100;
 }
+.desk_nav li {
+  position: relative;
+  padding-bottom: 0.5rem;
+  color: #c6c6c6;
+  font-weight: bold;
+  transition: color 300ms ease-in;
+}
+.desk_nav li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0.2rem;
+  background-color: #fff;
+  bottom: 0%;
+  left: 0%;
+  opacity: 0;
+
+  transition: opacity 300ms ease-in, background-color 300ms ease-in;
+}
+.desk_nav li:hover::after {
+  opacity: 1;
+  background-color: #add4b2;
+}
+.desk_nav li:hover {
+  color: #c9a84e;
+}
 .mob_nav {
   position: fixed;
   height: 100vh;
@@ -84,7 +110,6 @@ body {
   color: #c6c6c6;
   width: 100%;
   inset: 0rem 0rem 0rem 40%;
-  /* inset: 0% 40% 10% 50%; */
   padding-block-start: 5rem;
   padding-inline-start: 2rem;
   right: 0%;
@@ -125,7 +150,7 @@ body {
   /* position: absolute; */
   z-index: 999;
 }
-@media (min-width: 35rem) {
+@media (min-width: 639px) {
   .mob_nav {
     display: none;
     /* z-index: -1; */
