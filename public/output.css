@@ -605,14 +605,6 @@ video {
   right: 0px;
 }
 
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
-}
-
 .my-28 {
   margin-top: 7rem;
   margin-bottom: 7rem;
@@ -651,12 +643,16 @@ video {
   margin-top: 2rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .block {
@@ -687,10 +683,6 @@ video {
   height: 2rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .max-h-60 {
   max-height: 15rem;
 }
@@ -713,16 +705,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-max {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.w-4 {
-  width: 1rem;
 }
 
 .max-w-2xl {
@@ -755,7 +737,11 @@ video {
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
 
-.grid-cols-make-equal-cards1 {
+.grid-cols-make-equal-cards-2 {
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+}
+
+.grid-cols-make-equal-cards-1 {
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
 
@@ -787,6 +773,12 @@ video {
   gap: 2rem;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -807,10 +799,6 @@ video {
   border-top-right-radius: 0.5rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
 }
@@ -818,21 +806,6 @@ video {
 .border-orange-100 {
   --tw-border-opacity: 1;
   border-color: rgb(255 237 213 / var(--tw-border-opacity));
-}
-
-.border-gray-500 {
-  --tw-border-opacity: 1;
-  border-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
-
-.border-gray-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .bg-\[\#ffffff\] {
@@ -865,43 +838,13 @@ video {
   background-color: rgb(38 46 54 / var(--tw-bg-opacity));
 }
 
-.bg-gray-500 {
+.bg-\[\#272e39\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
+  background-color: rgb(39 46 57 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-slate-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
-}
-
-.bg-orange-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
-}
-
-.bg-indigo-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(67 56 202 / var(--tw-bg-opacity));
-}
-
-.bg-green-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#0d0d0d\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(13 13 13 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#272e39\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 46 57 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -938,17 +881,8 @@ video {
   padding-bottom: 8rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .pl-16 {
   padding-left: 4rem;
-}
-
-.pb-8 {
-  padding-bottom: 2rem;
 }
 
 .pb-4 {
@@ -1051,16 +985,6 @@ video {
 .text-\[\#c6c6c6\] {
   --tw-text-opacity: 1;
   color: rgb(198 198 198 / var(--tw-text-opacity));
-}
-
-.text-orange-400 {
-  --tw-text-opacity: 1;
-  color: rgb(251 146 60 / var(--tw-text-opacity));
-}
-
-.text-\[\#2a6646\] {
-  --tw-text-opacity: 1;
-  color: rgb(42 102 70 / var(--tw-text-opacity));
 }
 
 .text-\[\#ffcb66\] {
@@ -1436,15 +1360,15 @@ body {
 .money_container {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 3rem;
 }
 
 .money_container *:nth-child(1) {
-  flex: 1 1 40%;
+  flex: 1 1 38%;
 }
 
 .money_container *:nth-child(2) {
-  flex: 1 1 55%;
+  flex: 1 1 53%;
 }
 
 .money_title {
@@ -1487,16 +1411,6 @@ body {
 
 /* ! Money Container End */
 
-.placeholder\:text-xs::-moz-placeholder {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.placeholder\:text-xs::placeholder {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .placeholder\:text-base::-moz-placeholder {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -1505,16 +1419,6 @@ body {
 .placeholder\:text-base::placeholder {
   font-size: 1rem;
   line-height: 1.5rem;
-}
-
-.placeholder\:text-cyan-50::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(236 254 255 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-cyan-50::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(236 254 255 / var(--tw-text-opacity));
 }
 
 .placeholder\:text-gray-200::-moz-placeholder {
