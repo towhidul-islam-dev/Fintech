@@ -601,14 +601,14 @@ video {
   left: 0px;
 }
 
+.my-28 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .mb-8 {
@@ -627,16 +627,20 @@ video {
   margin-bottom: 1rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
 .mt-8 {
   margin-top: 2rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-28 {
+  margin-bottom: 7rem;
 }
 
 .block {
@@ -701,10 +705,6 @@ video {
   max-width: 24rem;
 }
 
-.max-w-xl {
-  max-width: 36rem;
-}
-
 .cursor-pointer {
   cursor: pointer;
 }
@@ -757,6 +757,15 @@ video {
   border-top-right-radius: 0.5rem;
 }
 
+.border-2 {
+  border-width: 2px;
+}
+
+.border-amber-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 243 199 / var(--tw-border-opacity));
+}
+
 .bg-\[\#ffffff\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -772,14 +781,14 @@ video {
   background-color: rgb(198 198 198 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+.bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -789,6 +798,11 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .px-4 {
@@ -801,9 +815,19 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pl-16 {
@@ -843,11 +867,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
@@ -856,6 +875,11 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -928,7 +952,6 @@ body {
   margin: auto;
   width: 91.666667%;
   max-width: 80rem;
-  padding: 2rem;
 }
 
 .hero_title {
@@ -997,12 +1020,19 @@ body {
 }
 
 .header_content {
+}
+
+.header-section {
   position: relative;
 }
 
 .cards,
 .header_content {
   max-width: 80%;
+}
+
+.digital {
+  position: relative;
 }
 
 .round_img {
@@ -1014,8 +1044,8 @@ body {
   overflow: hidden;
   outline: 2px solid blue;
   outline-offset: 10px;
-  top: 1%;
-  right: 15%;
+  top: 10%;
+  right: -26%;
 }
 
 .round_img img {
@@ -1045,13 +1075,14 @@ body {
 }
 
 .user_img {
+  border: 2px solid orange;
   position: absolute;
   max-width: 15rem;
   height: 18rem;
   border-radius: 0.5rem;
   overflow: hidden;
   right: 0%;
-  bottom: 5%;
+  bottom: 0%;
 }
 
 .user_img img {

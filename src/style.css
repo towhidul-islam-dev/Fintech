@@ -22,7 +22,7 @@ body {
   @apply bg-[#101521];
 }
 .container {
-  @apply w-11/12 max-w-7xl m-0 m-auto p-8;
+  @apply w-11/12 max-w-7xl m-0 m-auto;
 }
 .hero_title {
   @apply text-5xl leading-4 capitalize font-bold;
@@ -58,11 +58,16 @@ body {
   @apply border-none outline-none capitalize font-bold bg-[#ffcb66] text-[#101521] py-2 px-8 rounded-3xl;
 }
 .header_content {
+}
+.header-section {
   position: relative;
 }
 .cards,
 .header_content {
   max-width: 80%;
+}
+.digital {
+  position: relative;
 }
 .round_img {
   /* border: 2px solid red; */
@@ -73,9 +78,10 @@ body {
   overflow: hidden;
   outline: 2px solid blue;
   outline-offset: 10px;
-  top: 1%;
-  right: 15%;
+  top: 10%;
+  right: -26%;
 }
+
 .round_img img {
   width: 100%;
   height: 100%;
@@ -98,13 +104,14 @@ body {
   object-fit: cover;
 }
 .user_img {
+  border: 2px solid orange;
   position: absolute;
   max-width: 15rem;
   height: 18rem;
   border-radius: 0.5rem;
   overflow: hidden;
   right: 0%;
-  bottom: 5%;
+  bottom: 0%;
 }
 .user_img img {
   height: 100%;
