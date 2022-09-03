@@ -611,11 +611,6 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1304,6 +1299,22 @@ body {
 
 .money_container *:nth-child(2) {
   flex: 1 1 55%;
+}
+
+.money_text {
+  position: relative;
+  /* margin-left: 1rem; */
+  padding-left: 1rem;
+}
+
+.money_text::before {
+  position: absolute;
+  content: "";
+  width: 0.15rem;
+  height: 100%;
+  color: white;
+  background-color: #fff;
+  left: 0%;
 }
 
 /* ! Money Container End */
