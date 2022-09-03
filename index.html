@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/fontawesome/css/all.css" />
 
     <!-- ? Script -->
-    <!-- <script defer src="./app.js"></script> -->
+    <script defer src="./app.js"></script>
   </head>
   <body class="">
     <!-- <h2 class="text-yellow-500">Fintech Web-site</h2> -->
@@ -120,13 +120,15 @@
             <div
               class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
             >
-              <a href="#" class="cursor-pointer">
-                <img
-                  class="object-cover w-8"
-                  src="./assets/airtel.png"
-                  alt="airlet"
-                />
-              </a>
+              <button class="operator_btn" type="button">
+                <a href="#" class="cursor-pointer">
+                  <img
+                    class="object-cover w-8"
+                    src="./assets/airtel.png"
+                    alt="airlet"
+                  />
+                </a>
+              </button>
             </div>
             <h2 class="capitalize text-gray-200 font-bold">Airtel</h2>
           </div>
@@ -136,13 +138,15 @@
             <div
               class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
             >
-              <a href="#" class="cursor-pointer">
-                <img
-                  class="object-cover w-8"
-                  src="./assets/banglalink.png"
-                  alt="banglalink"
-                />
-              </a>
+              <button class="operator_btn" type="button">
+                <a href="#" class="cursor-pointer">
+                  <img
+                    class="object-cover w-8"
+                    src="./assets/banglalink.png"
+                    alt="banglalink"
+                  />
+                </a>
+              </button>
             </div>
             <h2 class="capitalize text-gray-200 font-bold">Banglalin</h2>
           </div>
@@ -152,13 +156,15 @@
             <div
               class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
             >
-              <a href="#" class="cursor-pointer">
-                <img
-                  class="object-cover w-8"
-                  src="./assets/robi.png"
-                  alt="robi"
-                />
-              </a>
+              <button class="operator_btn" type="button">
+                <a href="#" class="cursor-pointer">
+                  <img
+                    class="object-cover w-8"
+                    src="./assets/robi.png"
+                    alt="robi"
+                  />
+                </a>
+              </button>
             </div>
             <h2 class="capitalize text-gray-200 font-bold">robi</h2>
           </div>
@@ -168,9 +174,15 @@
             <div
               class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
             >
-              <a href="#" class="cursor-pointer">
-                <img class="object-cover w-8" src="./assets/gp.png" alt="gp" />
-              </a>
+              <button class="operator_btn" type="button">
+                <a href="#" class="cursor-pointer">
+                  <img
+                    class="object-cover w-8"
+                    src="./assets/gp.png"
+                    alt="gp"
+                  />
+                </a>
+              </button>
             </div>
             <h2 class="capitalize text-gray-200 font-bold">gp</h2>
           </div>
@@ -180,20 +192,22 @@
             <div
               class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
             >
-              <a href="#" class="cursor-pointer">
-                <img
-                  class="object-cover w-8"
-                  src="./assets/teletalk.png"
-                  alt="teletalk"
-                />
-              </a>
+              <button class="operator_btn" type="button">
+                <a href="#" class="cursor-pointer">
+                  <img
+                    class="object-cover w-8"
+                    src="./assets/teletalk.png"
+                    alt="teletalk"
+                  />
+                </a>
+              </button>
             </div>
             <h2 class="capitalize text-gray-200 font-bold">taletalk</h2>
           </div>
         </div>
-        <div class="user_img">
+        <!-- <div class="user_img">
           <img src="http://unsplash.it/500/500?image=324" alt="frog" />
-        </div>
+        </div> -->
       </div>
       <!-- !! Patter Design Start -->
       <div
@@ -221,10 +235,10 @@
     <section class="bg-gray-600 py-32 mt-32">
       <div class="container">
         <!-- * Pricing Section Start -->
-        <div>
-          <div class="container">
+        <div class="pricing-section hidden pb-24">
+          <div class="container1">
             <div
-              class="pricing_container grid grid-cols-pricing-card place-items-center gap-16"
+              class="pricing_container1 grid grid-cols-pricing-card place-items-center gap-20"
             >
               <div
                 class="pricing_card bg-gradient-to-b from-pink-400 to-pink-600 w-max p-8 text-gray-800"
@@ -302,7 +316,7 @@
           </div>
         </div>
         <!-- ! Pricing Section End -->
-        <div class="money_container pt-28">
+        <div class="money_container">
           <div class="money_img max-w-sm w-full rounded-3xl relative z-10">
             <img
               class="w-full h-full object-cover rounded-3xl"

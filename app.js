@@ -1,4 +1,5 @@
-const barsCross = document.querySelector(".bars").firstElementChild;
+const barsCross = document.querySelector(".bars");
+// barsCross.firstElementChild;
 const navList = document.querySelector(".nav_lists");
 const navLink = document.querySelectorAll(".nav_link");
 const navBar = document.querySelector(".nav_container");
@@ -6,13 +7,39 @@ const section = document.querySelectorAll(".section");
 const header = document.querySelector("#header");
 const about = document.querySelector("#about");
 const banner = document.querySelector("#banner");
+const pricingSecion = document.querySelector(".pricing-section");
+const operatorBtn = document.querySelectorAll(".operator_btn");
 
-console.log(banner);
+console.log(pricingSecion);
+
+//  ?? Pricing section>>
+
+const pricingFunc = () => {
+  const price = operatorBtn.forEach((operator) => {
+    operator.addEventListener("click", (e) => {
+      e.preventDefault();
+      console.log(e.target);
+      let attribute = e.target.getAttribute("alt");
+      console.log(attribute);
+      console.log(pricingSecion.classList.contains("hidden"));
+      if (pricingSecion.classList.contains("hidden")) {
+        pricingSecion.classList.remove("hidden");
+        pricingSecion.classList.add("block");
+      } else {
+        pricingSecion.classList.add("hidden");
+        pricingSecion.classList.remove("block");
+      }
+    });
+  });
+  return price;
+};
+pricingFunc();
+
 // ? Adding border to all section???
 
 // ! Toggle the navbar :::
-barsCross.style.cursor = "pointer";
-barsCross.addEventListener("click", () => {
+// barsCross.style.cursor = "pointer";
+/* barsCross.addEventListener("click", () => {
   console.log("button");
   if (barsCross.classList.contains("fa-bars")) {
     console.log("cross");
@@ -24,9 +51,7 @@ barsCross.addEventListener("click", () => {
   }
   navList.classList.toggle("nav_lists-hidden");
   navList.classList.toggle("nav_lists-animation");
-});
-
-// ! Smooth Scrolling :::
+}) */ // ! Smooth Scrolling :::
 navLink.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
