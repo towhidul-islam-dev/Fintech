@@ -77,7 +77,7 @@ body {
 }
 @media (max-width: 600px) {
   .header_content {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     max-width: 90%;
   }
 }
@@ -87,7 +87,6 @@ body {
   /* color: yellow; */
 }
 .button_container {
-  border: 2px solid red;
 }
 .header_title {
   font-size: clamp(2.5rem, 8vw + 1.5rem, 12rem);

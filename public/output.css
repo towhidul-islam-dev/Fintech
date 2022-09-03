@@ -992,20 +992,16 @@ video {
   padding-left: 4rem;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
 }
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-28 {
-  padding-top: 7rem;
-}
-
-.pb-24 {
-  padding-bottom: 6rem;
 }
 
 .text-left {
@@ -1247,7 +1243,7 @@ body {
 
 @media (max-width: 600px) {
   .header_content {
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     max-width: 90%;
   }
 }
@@ -1259,7 +1255,6 @@ body {
 }
 
 .button_container {
-  border: 2px solid red;
 }
 
 .header_title {
