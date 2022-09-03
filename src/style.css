@@ -6,12 +6,12 @@
 :root {
   --primary-bg-clr: #101521;
   --font-clr: #ffffff;
-  --clr1: #ffcb66;
   --clr2: #acd8b5;
   --clr3: #101722;
   --clr4: #f6bde9;
   --clr5: #0d0d0d;
   --clr6: #272e39;
+  --clr1: #ffcb66;
   --clr7: #2a6646;
   --clr8: #d5c8b5;
   --clr9: #000000;
@@ -54,24 +54,40 @@ body {
   @apply text-gray-800;
 }
 .fa-star {
-  @apply text-4xl text-[#ffcb66];
+  @apply hidden sm:text-4xl text-[#ffcb66];
 }
 .header-btn {
   @apply border-none outline-none capitalize font-bold bg-[#ffcb66] text-[#101521] py-2 px-8 rounded-3xl;
+}
+.play-btn i {
+  color: #e68e09;
+  font-size: clamp(2rem, 3vw, 4rem);
 }
 .header_content {
 }
 .header-section {
   position: relative;
 }
+.cards {
+}
 .cards,
 .header_content {
-  max-width: 70%;
+  max-width: 75%;
+  z-index: 100;
+}
+@media (max-width: 600px) {
+  .header_content {
+    border: 2px solid yellow;
+    max-width: 90%;
+  }
 }
 .header_text {
   position: relative;
   /* border: 2px solid red; */
   /* color: yellow; */
+}
+.button_container {
+  border: 2px solid red;
 }
 .header_title {
   font-size: clamp(2.5rem, 8vw + 1.5rem, 12rem);
@@ -310,6 +326,28 @@ body {
 .money_title {
   @apply font-bold capitalize;
 }
+.money_play-btn {
+  position: absolute;
+  left: 70%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  background-color: green;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9999;
+  outline: 2px solid transparent;
+  outline-offset: 7px;
+  transition: outline 300ms ease-in;
+}
+.money_play-btn i {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  color: goldenrod;
+}
+.money_play-btn:hover {
+  outline: 2px solid goldenrod;
+}
 .money_title {
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   line-height: 1.1;
@@ -341,3 +379,13 @@ body {
   }
 }
 /* ! Money Container End */
+
+/* ?? Patter Design Start */
+.patter {
+  padding: max(3vh, 4rem) 4rem;
+}
+.patter_container {
+  top: -3%;
+  right: -3%;
+}
+/* ! Patter Design End */
