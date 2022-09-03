@@ -388,3 +388,21 @@ body {
   right: -3%;
 }
 /* ! Patter Design End */
+
+/* * pricing_container Start */
+.pricing_container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.pricing_container1 * {
+  flex-basis: 30%;
+}
+@media (max-width: 600px) {
+  .pricing_container1 * {
+    flex-basis: 100%;
+  }
+}
+/* ! pricing_container End */
