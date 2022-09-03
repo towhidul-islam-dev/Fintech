@@ -792,17 +792,8 @@ video {
   border-top-right-radius: 0.5rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-b-2 {
   border-bottom-width: 2px;
-}
-
-.border-gray-200 {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
 .border-orange-100 {
@@ -883,8 +874,8 @@ video {
   padding-bottom: 8rem;
 }
 
-.pt-28 {
-  padding-top: 7rem;
+.pt-36 {
+  padding-top: 9rem;
 }
 
 .pl-16 {
@@ -893,14 +884,6 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
-}
-
-.pt-32 {
-  padding-top: 8rem;
-}
-
-.pt-36 {
-  padding-top: 9rem;
 }
 
 .text-left {
@@ -1025,10 +1008,8 @@ body {
 }
 
 .container {
-  margin: 0px;
-  margin: auto;
-  width: 91.666667%;
-  max-width: 80rem;
+  width: min(90%, 1200px);
+  margin-inline: auto;
 }
 
 .hero_title {
@@ -1041,7 +1022,7 @@ body {
 
 .digital {
   position: relative;
-  padding-left: 20%;
+  padding-left: 25%;
 }
 
 .digital::after {
@@ -1049,9 +1030,9 @@ body {
   content: "world class";
   text-transform: capitalize;
   border: 2px solid rgb(245, 242, 242);
-  font-size: clamp(0.6rem, 2vw, 0.8rem);
+  font-size: clamp(0.5rem, 2vw, 0.7rem);
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   outline: 2px solid rgb(240, 239, 239);
   outline-offset: 0.25rem;
   top: 45%;
@@ -1105,16 +1086,18 @@ body {
 
 .cards,
 .header_content {
-  max-width: 80%;
+  max-width: 70%;
 }
 
 .header_text {
   position: relative;
+  /* border: 2px solid red; */
+  /* color: yellow; */
 }
 
 .header_title {
-  font-size: clamp(2.5rem, 10vw + 1.5rem, 12rem);
-  position: relative;
+  font-size: clamp(2.5rem, 8vw + 1.5rem, 12rem);
+  /* position: relative; */
   line-height: 1.2;
 }
 
@@ -1125,14 +1108,14 @@ body {
 .round_img {
   /* border: 2px solid red; */
   position: absolute;
-  max-width: 6rem;
+  width: max(5vh, 4rem);
   aspect-ratio: 1 /1;
   border-radius: 50%;
   overflow: hidden;
   outline: 3px solid #e68e09;
   outline-offset: 10px;
   top: 5%;
-  right: 6%;
+  right: -5%;
 }
 
 .round_img img {
@@ -1162,10 +1145,9 @@ body {
 }
 
 .user_img {
-  border: 2px solid orange;
   position: absolute;
-  max-width: 15rem;
-  height: 18rem;
+  width: max(3vh, 12rem);
+  height: 17rem;
   border-radius: 0.5rem;
   overflow: hidden;
   right: 0%;
