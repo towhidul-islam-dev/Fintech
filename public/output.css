@@ -655,6 +655,10 @@ video {
   margin-top: 8rem;
 }
 
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -673,18 +677,6 @@ video {
 
 .mt-12 {
   margin-top: 3rem;
-}
-
-.mt-24 {
-  margin-top: 6rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.mb-32 {
-  margin-bottom: 8rem;
 }
 
 .block {
@@ -926,6 +918,26 @@ video {
   background-color: transparent;
 }
 
+.bg-\[\#fbc941\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 201 65 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f6bde9\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 189 233 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#cfc6ff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(207 198 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#acd8b5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(172 216 181 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -996,20 +1008,12 @@ video {
   padding-left: 4rem;
 }
 
-.pb-24 {
-  padding-bottom: 6rem;
-}
-
 .pb-4 {
   padding-bottom: 1rem;
 }
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pb-32 {
-  padding-bottom: 8rem;
 }
 
 .text-left {
@@ -1129,6 +1133,11 @@ video {
   outline-offset: 2px;
 }
 
+.drop-shadow-md {
+  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1148,17 +1157,19 @@ video {
 :root {
   --primary-bg-clr: #101521;
   --font-clr: #ffffff;
-  --clr2: #acd8b5;
+  --clr2: #add4b2;
   --clr3: #101722;
-  --clr4: #f6bde9;
+  --clr4: #cfc6ff;
   --clr5: #0d0d0d;
-  --clr6: #272e39;
-  --clr1: #ffcb66;
+  --clr6: #3f424c;
+  --clr1: #c9a84e;
   --clr7: #2a6646;
-  --clr8: #d5c8b5;
+  --clr8: #f6bde9;
   --clr9: #000000;
   --clr10: #262e36;
   --clr11: #c6c6c6;
+  --clr12: #fbc941;
+  --clr14: #acd8b5;
 }
 
 body {

@@ -9,10 +9,20 @@ const about = document.querySelector("#about");
 const banner = document.querySelector("#banner");
 const pricingSecion = document.querySelector(".pricing-section");
 const operatorBtn = document.querySelectorAll(".operator_btn");
+const deskNav = document.querySelector(".desk_nav");
+const mobNav = document.querySelector(".mob_nav");
+const faBars = document.querySelector(".fa-bars");
 
-console.log(pricingSecion);
+console.log(faBars);
 
 //  ?? Pricing section>>
+
+if (deskNav.classList.contains("hidden")) {
+  console.log("right");
+  faBars.addEventListener("click", (e) => {
+    e.preventDefault();
+  });
+}
 
 const pricingFunc = () => {
   const price = operatorBtn.forEach((operator) => {

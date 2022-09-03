@@ -6,17 +6,19 @@
 :root {
   --primary-bg-clr: #101521;
   --font-clr: #ffffff;
-  --clr2: #acd8b5;
+  --clr2: #add4b2;
   --clr3: #101722;
-  --clr4: #f6bde9;
+  --clr4: #cfc6ff;
   --clr5: #0d0d0d;
-  --clr6: #272e39;
-  --clr1: #ffcb66;
+  --clr6: #3f424c;
+  --clr1: #c9a84e;
   --clr7: #2a6646;
-  --clr8: #d5c8b5;
+  --clr8: #f6bde9;
   --clr9: #000000;
   --clr10: #262e36;
   --clr11: #c6c6c6;
+  --clr12: #fbc941;
+  --clr14: #acd8b5;
 }
 body {
   @apply bg-[#101521];
