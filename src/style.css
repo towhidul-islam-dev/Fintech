@@ -276,3 +276,18 @@ body {
 .components {
   /* margin-block: 8rem; */
 }
+
+/* ** Money Container Start */
+.money_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+.money_container *:nth-child(1) {
+  flex: 1 1 40%;
+}
+.money_container *:nth-child(2) {
+  flex: 1 1 55%;
+}
+
+/* ! Money Container End */

@@ -611,6 +611,11 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -631,16 +636,12 @@ video {
   margin-top: 5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
 .mb-28 {
   margin-bottom: 7rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -663,6 +664,10 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .max-h-60 {
   max-height: 15rem;
 }
@@ -681,6 +686,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-2xl {
@@ -710,6 +719,10 @@ video {
 }
 
 .grid-cols-make-equal-cards {
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+}
+
+.grid-cols-make-equal-cards1 {
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
 
@@ -753,17 +766,12 @@ video {
   border-radius: 0.5rem;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .rounded-tr-lg {
   border-top-right-radius: 0.5rem;
-}
-
-.border-2 {
-  border-width: 2px;
-}
-
-.border-amber-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(254 243 199 / var(--tw-border-opacity));
 }
 
 .bg-\[\#ffffff\] {
@@ -791,6 +799,11 @@ video {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#262e36\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 46 54 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -800,9 +813,14 @@ video {
   padding: 1.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
 .px-4 {
@@ -815,19 +833,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .pl-16 {
@@ -892,6 +900,10 @@ video {
 
 .capitalize {
   text-transform: capitalize;
+}
+
+.leading-tight {
+  line-height: 1.25;
 }
 
 .text-yellow-500 {
@@ -1277,3 +1289,21 @@ body {
 .components {
   /* margin-block: 8rem; */
 }
+
+/* ** Money Container Start */
+
+.money_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.money_container *:nth-child(1) {
+  flex: 1 1 40%;
+}
+
+.money_container *:nth-child(2) {
+  flex: 1 1 55%;
+}
+
+/* ! Money Container End */
