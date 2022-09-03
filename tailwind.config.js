@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       gridTemplateColumns: {
-        "make-equal-cards": "repeat(auto-fit, minmax(14rem, 1fr))",
+        "make-equal-cards": "repeat(auto-fit, minmax(5rem, 1fr))",
       },
     },
   },
