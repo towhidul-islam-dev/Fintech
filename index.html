@@ -16,17 +16,20 @@
   </head>
   <body class="">
     <!-- * Header section Start -->
+
     <header class="pt-36 relative z-10 overflow-x-hidden">
       <!-- ? Nav Section Start -->
       <nav class="py-8 absolute top-0 w-full z-30">
         <div class="container text-gray-200">
-          <div class="nav_content flex items-center justify-between gap-2">
+          <div class="nav_content">
             <div class="nav_logo">
               <a class="text-5xl" href="#"
                 ><i class="fa-solid fa-snowflake"></i
               ></a>
             </div>
-            <ul class="nav_items desk_nav sm:flex items-center hidden gap-4">
+            <ul
+              class="nav_items desk_nav sm:flex items-center hidden gap-4 relative"
+            >
               <li>
                 <a class="capitalize text-base cursor-pointer" href="#"
                   >About us</a
@@ -254,6 +257,7 @@
     <!-- ! Header section End -->
 
     <!-- ** Money Section Start -->
+
     <section class="bg-gray-600 py-32 mt-32">
       <div class="container">
         <!-- * Pricing Section Start -->
@@ -261,75 +265,117 @@
           <div class="container1">
             <div class="pricing_container1">
               <div
-                class="pricing_card bg-gradient-to-b from-pink-400 to-pink-600 w-max p-8 text-gray-800"
+                class="pricing_card bg-[#c6c6c6] drop-shadow-lg w-max text-gray-800 relative"
               >
-                <div class="border-b-2 border-gray-800 px-12 text-center pb-4">
-                  <h2 class="uppercase font-bold">standared</h2>
-                  <h2 class="text-5xl font-bold text-gray-700 my-2">$4.99</h2>
-                  <p class="">per-month</p>
+                <!-- * package Icon -->
+                <div
+                  class="package_logo absolute top-0 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-[#c6c6c6] w-24 aspect-square rounded-full grid place-items-center text-5xl text-[#c9a84e]"
+                >
+                  <span>
+                    <i class="fas fa-rocket"></i>
+                  </span>
                 </div>
-                <div class="px-12 text-center pt-2 text-gray-800">
-                  <h4 class="text-lg font-bold first-letter:text-gray-700">
-                    5 users
-                  </h4>
-                  <p class="capitalize font-bold">feature 1</p>
-                  <p class="capitalize font-bold">feature 2</p>
-                  <p class="capitalize font-bold">feature 3</p>
-                </div>
-                <div class="w-full grid place-items-center mt-4 mb-12">
-                  <button
-                    class="price_btn text-gray-200 bg-black hover:bg-[#add4b2] hover:text-[#ffffff] transition-all  uppercase border-none outline-none cursor-pointer py-2 px-8"
+
+                <div class="">
+                  <div
+                    class="price_section pt-20 px-12 text-center pb-4 relative"
                   >
-                    get plan
-                  </button drop-shadow-mdtton>
+                    <h2 class="uppercase font-bold">standared</h2>
+                    <h2 class="text-5xl font-bold text-gray-700 my-2">$4.99</h2>
+                    <p class="">per-month</p>
+                  </div>
+                  <div class="px-12 text-center pt-2 text-gray-800">
+                    <h4 class="text-lg font-bold first-letter:text-gray-700">
+                      5 users
+                    </h4>
+                    <p class="capitalize font-bold">feature 1</p>
+                    <p class="capitalize font-bold">feature 2</p>
+                    <p class="capitalize font-bold">feature 3</p>
+                  </div>
+                  <div class="w-full grid place-items-center mt-4 mb-12">
+                    <button
+                      class="price_btn text-[#101722] bg-[#ffffff] hover:bg-[#101722] hover:text-[#ffffff] transition-all uppercase border-none outline-none cursor-pointer py-2 px-8"
+                    >
+                      get plan
+                    </button>
+                  </div>
                 </div>
               </div>
               <div
-                class="pricing_card bg-gradient-to-b from-pink-400 to-pink-600 w-max p-8 text-gray-800"
+                class="pricing_card bg-[#c6c6c6] drop-shadow-lg w-max text-gray-800 relative"
               >
-                <div class="border-b-2 border-gray-800 px-12 text-center pb-4">
-                  <h2 class="uppercase font-bold">standared</h2>
-                  <h2 class="text-5xl font-bold text-gray-700 my-2">$4.99</h2>
-                  <p class="">per-month</p>
+                <!-- * package Icon -->
+                <div
+                  class="package_logo absolute top-0 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-[#c9a84e] w-24 aspect-square rounded-full grid place-items-center text-5xl text-[#c6c6c6]"
+                >
+                  <span>
+                    <i class="fas fa-rocket"></i>
+                  </span>
                 </div>
-                <div class="px-12 text-center pt-2 text-gray-800">
-                  <h4 class="text-lg font-bold first-letter:text-gray-700">
-                    5 users
-                  </h4>
-                  <p class="capitalize font-bold">feature 1</p>
-                  <p class="capitalize font-bold">feature 2</p>
-                  <p class="capitalize font-bold">feature 3</p>
-                </div>
-                <div class="w-full grid place-items-center mt-4 mb-12">
-                  <button
-                    class="price_btn text-gray-200 bg-black hover:bg-[#add4b2] hover:text-[#ffffff] transition-all  uppercase border-none outline-none cursor-pointer py-2 px-8"
-                  >
-                    get plan
-                  </button drop-shadow-mdtton>
+
+                <div>
+                  <div class="bg-[#c9a84e]">
+                    <div class="pt-20 px-12 text-center pb-4">
+                      <h2 class="uppercase font-bold">standared</h2>
+                      <h2 class="text-5xl font-bold text-gray-700 my-2">
+                        $4.99
+                      </h2>
+                      <p class="">per-month</p>
+                    </div>
+                  </div>
+
+                  <div class="px-12 text-center pt-2 text-gray-800">
+                    <h4 class="text-lg font-bold first-letter:text-gray-700">
+                      5 users
+                    </h4>
+                    <p class="capitalize font-bold">feature 1</p>
+                    <p class="capitalize font-bold">feature 2</p>
+                    <p class="capitalize font-bold">feature 3</p>
+                  </div>
+                  <div class="w-full grid place-items-center mt-4 mb-12">
+                    <button
+                      class="price_btn text-[#101722] bg-[#ffffff] hover:bg-[#c9a84e] hover:text-[#ffffff] transition-all uppercase border-none outline-none cursor-pointer py-2 px-8"
+                    >
+                      get plan
+                    </button>
+                  </div>
                 </div>
               </div>
               <div
-                class="pricing_card bg-gradient-to-b from-pink-400 to-pink-600 w-max p-8 text-gray-800"
+                class="pricing_card bg-[#c6c6c6] drop-shadow-lg w-max text-gray-800 relative"
               >
-                <div class="border-b-2 border-gray-800 px-12 text-center pb-4">
-                  <h2 class="uppercase font-bold">standared</h2>
-                  <h2 class="text-5xl font-bold text-gray-700 my-2">$4.99</h2>
-                  <p class="">per-month</p>
+                <!-- * package Icon -->
+                <div
+                  class="package_logo absolute top-0 left-2/4 -translate-x-1/2 -translate-y-1/2 bg-[#c6c6c6] w-24 aspect-square rounded-full grid place-items-center text-5xl text-[#c9a84e]"
+                >
+                  <span>
+                    <i class="fas fa-rocket"></i>
+                  </span>
                 </div>
-                <div class="px-12 text-center pt-2 text-gray-800">
-                  <h4 class="text-lg font-bold first-letter:text-gray-700">
-                    5 users
-                  </h4>
-                  <p class="capitalize font-bold">feature 1</p>
-                  <p class="capitalize font-bold">feature 2</p>
-                  <p class="capitalize font-bold">feature 3</p>
-                </div>
-                <div class="w-full grid place-items-center mt-4 mb-12">
-                  <button
-                    class="price_btn text-gray-200 bg-black hover:bg-[#add4b2] hover:text-[#ffffff] transition-all  uppercase border-none outline-none cursor-pointer py-2 px-8"
+
+                <div class="">
+                  <div
+                    class="price_section pt-20 px-12 text-center pb-4 relative"
                   >
-                    get plan
-                  </button drop-shadow-mdtton>
+                    <h2 class="uppercase font-bold">standared</h2>
+                    <h2 class="text-5xl font-bold text-gray-700 my-2">$4.99</h2>
+                    <p class="">per-month</p>
+                  </div>
+                  <div class="px-12 text-center pt-2 text-gray-800">
+                    <h4 class="text-lg font-bold first-letter:text-gray-700">
+                      5 users
+                    </h4>
+                    <p class="capitalize font-bold">feature 1</p>
+                    <p class="capitalize font-bold">feature 2</p>
+                    <p class="capitalize font-bold">feature 3</p>
+                  </div>
+                  <div class="w-full grid place-items-center mt-4 mb-12">
+                    <button
+                      class="price_btn text-[#101722] bg-[#ffffff] hover:bg-[#101722] hover:text-[#ffffff] transition-all uppercase border-none outline-none cursor-pointer py-2 px-8"
+                    >
+                      get plan
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -387,9 +433,11 @@
         </div>
       </div>
     </section>
+
     <!-- ! Money Section End -->
 
     <!-- ** Client Feedback Start -->
+
     <section class="bg-gray-700 py-28">
       <div class="container">
         <div class="max-w-2xl mb-28">
@@ -478,9 +526,12 @@
         </div>
       </div>
     </section>
+
     <!-- ! Client Feedback End -->
+
     <!-- ** Latest Blog Card Start -->
-    <!--     <div class="">
+
+    <!--<div class="">
       <div class="container">
         <div class="blog_content text-gray-200 mb-8 max-w-lg">
           <h2 class="hero_title font-sans mb-4">
@@ -603,13 +654,15 @@
         </div>
       </div>
     </div> -->
-    <!-- ** Latest Blog Card End -->
+
+    <!-- ! Latest Blog Card End -->
 
     <!-- ** Footer Section Start -->
+
     <footer class="bg-[#272e39]">
       <div class="container">
         <div class="footer_content">
-          <div class="money_container py-32">
+          <div class="money_container py-24">
             <div
               class="text-gray-200 rounded-none money_img max-w-sm w-full overflow-hidden"
             >
@@ -720,6 +773,7 @@
         </div>
       </div>
     </footer>
+
     <!-- ! Footer Section End -->
   </body>
 </html>
