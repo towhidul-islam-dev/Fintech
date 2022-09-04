@@ -877,11 +877,6 @@ video {
   border-style: none;
 }
 
-.border-gray-800 {
-  --tw-border-opacity: 1;
-  border-color: rgb(31 41 55 / var(--tw-border-opacity));
-}
-
 .border-orange-100 {
   --tw-border-opacity: 1;
   border-color: rgb(255 237 213 / var(--tw-border-opacity));
@@ -965,10 +960,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1027,10 +1018,6 @@ video {
 
 .pt-2 {
   padding-top: 0.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
 }
 
 .text-left {
@@ -1649,11 +1636,8 @@ body {
 .client-btn {
   border: 2px solid transparent;
   outline: none;
-  /* background-color: #fff; */
   width: 3rem;
-  /* aspect-ratio: 1/1; */
   height: 3rem;
-  /* font-size: 2rem; */
   font-weight: lighter;
   border-radius: 50%;
   cursor: pointer;
@@ -1661,7 +1645,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  transition: border 300ms ease-in, background-color 300ms ease-in;
+  transition: border 300ms ease-in, background-color 300ms ease-in,
+    color 300ms ease-in;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1676,11 +1661,13 @@ body {
 }
 
 .btn-1:hover {
+  color: rgb(245, 242, 242);
   border: 2px solid green;
   background-color: transparent;
 }
 
 .btn-2:hover {
+  color: rgb(245, 242, 242);
   border: 2px solid orange;
   background-color: transparent;
 }
