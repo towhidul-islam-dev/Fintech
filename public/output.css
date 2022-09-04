@@ -1201,7 +1201,7 @@ body {
 
 .digital {
   position: relative;
-  padding-left: 25%;
+  padding-left: 15%;
 }
 
 .header_title {
@@ -1221,11 +1221,11 @@ body {
   position: absolute;
   content: "world class";
   text-transform: capitalize;
-  border: 2px solid rgb(245, 242, 242);
-  font-size: clamp(0.5rem, 2vw, 0.7rem);
+  border: 0.2rem solid rgb(245, 242, 242);
+  font-size: clamp(0.4rem, 2vw, 0.5rem);
   display: block;
   padding: 0.5rem;
-  outline: 2px solid rgb(240, 239, 239);
+  outline: 0.2rem solid rgb(240, 239, 239);
   outline-offset: 0.25rem;
   top: 45%;
   left: 0%;
@@ -1369,9 +1369,16 @@ body {
      object-fit: cover;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .cards {
     max-width: 95%;
+  }
+
+  .digital::after {
+    top: 5%;
+    transform: rotate(-40deg);
+    border: none;
+    outline: none;
   }
 }
 
@@ -1420,7 +1427,7 @@ body {
   }
 
   .user_img1 {
-    right: 8%;
+    right: 12%;
     max-width: 10rem;
     height: 14rem;
   }
