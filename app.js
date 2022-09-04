@@ -3,7 +3,7 @@ const operatorBtn = document.querySelectorAll(".operator_btn");
 const deskNav = document.querySelector(".desk_nav");
 const mobNav = document.querySelector(".mob_nav");
 const faBars = document.querySelector(".mob");
-
+const data = document.querySelector;
 console.log(faBars);
 
 // ? Navbar Toggling:::
