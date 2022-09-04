@@ -1614,8 +1614,6 @@ body {
   gap: 2rem;
 }
 
-/* ! ClientFeedback Section End */
-
 .client-btn {
   border: 2px solid transparent;
   outline: none;
@@ -1711,9 +1709,7 @@ body {
   }
 }
 
-.components {
-  /* margin-block: 8rem; */
-}
+/* ! ClientFeedback Section End */
 
 .pricing_container1 {
   display: flex;
