@@ -947,6 +947,11 @@ video {
   background-color: transparent;
 }
 
+.bg-\[\#f2eeee\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(242 238 238 / var(--tw-bg-opacity));
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -1132,6 +1137,16 @@ video {
 .text-\[\#ffcb66\] {
   --tw-text-opacity: 1;
   color: rgb(255 203 102 / var(--tw-text-opacity));
+}
+
+.text-\[\#f2eeee\] {
+  --tw-text-opacity: 1;
+  color: rgb(242 238 238 / var(--tw-text-opacity));
+}
+
+.text-\[\#acd8b5\] {
+  --tw-text-opacity: 1;
+  color: rgb(172 216 181 / var(--tw-text-opacity));
 }
 
 .opacity-60 {
