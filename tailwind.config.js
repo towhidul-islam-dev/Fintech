@@ -13,6 +13,30 @@ module.exports = {
         "custom-radius-1": "6rem",
         "custom-radius-round": "50%",
       },
+      fontSize: {
+        "resFont-header-title": "clamp(2.5rem, 8vw + 1.5rem, 12rem)",
+        "resFont-mob-nav": "clamp(0.8rem, 5vw + 0.8rem, 1.2rem)",
+        "resFont-money_play-i": "clamp(1.5rem, 3vw, 3rem)",
+        "resFont-money_title": "clamp(1rem, 3vw + 1rem, 4rem)",
+        "header-text": "clamp(0.7rem, 3vw, 2rem)",
+        "play-btn-i": "clamp(2rem, 3vw, 4rem)",
+      },
+      transitionProperty: {
+        outline: "outline",
+        border: "border",
+      },
+      maxWidth: {
+        userImg: "5rem",
+      },
+      maxWidth: {
+        personImg: "5rem",
+        userBigImg: "9rem",
+      },
+      lineHeight: {
+        customOne: "1.1",
+        customTwo: "1.3",
+        customThree: "1.2",
+      },
     },
   },
   plugins: [],
