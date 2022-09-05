@@ -96,10 +96,12 @@ body {
 }
 
 /* Todo: modified */
-.round_img-tailwind {
-  @apply absolute aspect-square rounded-full overflow-hidden outline-4 outline-yellow-600 outline-offset-8;
-}
 .round_img {
+  @apply absolute aspect-square rounded-full overflow-hidden outline-4 outline-yellow-600 outline-offset-8 max-w-roundImg;
+  top: 5%;
+  right: -5%;
+}
+/* .round_img {
   position: absolute;
   width: max(5vh, 4rem);
   aspect-ratio: 1 /1;
@@ -109,7 +111,7 @@ body {
   outline-offset: 10px;
   top: 5%;
   right: -5%;
-}
+} */
 /* Todo: modified */
 .round_img img {
   @apply w-full h-full object-cover;

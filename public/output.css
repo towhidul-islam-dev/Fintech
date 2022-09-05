@@ -1323,17 +1323,20 @@ body {
 
 /* Todo: modified */
 
-.round_img-tailwind {
+.round_img {
   position: absolute;
   aspect-ratio: 1 / 1;
+  max-width: max(5vh, 4rem);
   overflow: hidden;
   border-radius: 9999px;
   outline-width: 4px;
   outline-offset: 8px;
   outline-color: #ca8a04;
+  top: 5%;
+  right: -5%;
 }
 
-.round_img {
+/* .round_img {
   position: absolute;
   width: max(5vh, 4rem);
   aspect-ratio: 1 /1;
@@ -1343,7 +1346,7 @@ body {
   outline-offset: 10px;
   top: 5%;
   right: -5%;
-}
+} */
 
 /* Todo: modified */
 

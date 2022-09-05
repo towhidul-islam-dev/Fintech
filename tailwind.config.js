@@ -31,6 +31,7 @@ module.exports = {
       maxWidth: {
         personImg: "5rem",
         userBigImg: "9rem",
+        roundImg: "max(5vh, 4rem)",
       },
       lineHeight: {
         customOne: "1.1",
