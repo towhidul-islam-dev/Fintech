@@ -12,6 +12,7 @@ module.exports = {
       borderRadius: {
         "custom-radius-1": "6rem",
         "custom-radius-round": "50%",
+        "round-left": "15rem",
       },
       fontSize: {
         "resFont-header-title": "clamp(2.5rem, 8vw + 1.5rem, 12rem)",
