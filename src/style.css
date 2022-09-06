@@ -255,7 +255,7 @@ body {
 
 /* ! Nav Section End */
 .hero_title {
-  @apply text-5xl leading-4 capitalize font-bold;
+  @apply text-5xl leading-tight capitalize font-bold;
 }
 /* ? Money Section Start */
 

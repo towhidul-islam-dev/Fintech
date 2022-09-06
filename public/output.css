@@ -719,6 +719,10 @@ video {
   height: 2rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .max-h-60 {
   max-height: 15rem;
 }
@@ -786,7 +790,7 @@ video {
 }
 
 .grid-cols-make-equal-cards {
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
 }
 
 .grid-cols-make-equal-cards-1 {
@@ -795,6 +799,10 @@ video {
 
 .grid-cols-make-equal-cards-2 {
   grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
+}
+
+.grid-cols-make-equal-cards-operator {
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
 }
 
 .flex-col {
@@ -979,6 +987,11 @@ video {
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .px-4 {
@@ -1575,10 +1588,9 @@ body {
 
 .hero_title {
   font-size: 3rem;
-  line-height: 1;
   font-weight: 700;
   text-transform: capitalize;
-  line-height: 1rem;
+  line-height: 1.25;
 }
 
 /* ? Money Section Start */
