@@ -3,7 +3,7 @@ const operatorBtn = document.querySelectorAll(".operator_btn");
 const deskNav = document.querySelector(".desk_nav");
 const mobNav = document.querySelector(".mob_nav");
 const faBars = document.querySelector(".mob");
-const data = document.querySelector;
+const date = document.querySelector(".date");
 console.log(faBars);
 
 // ? Navbar Toggling:::
@@ -46,4 +46,7 @@ const pricingFunc = () => {
 };
 pricingFunc();
 
-// ? Adding border to all section???
+// ? Set Dynamic Date for footer Section...
+const curYear = new Date().getFullYear();
+date.textContent = curYear;
+date.style.color = "#e68e09";

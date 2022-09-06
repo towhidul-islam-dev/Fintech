@@ -6,7 +6,7 @@ module.exports = {
       gridTemplateColumns: {
         "make-equal-cards": "repeat(auto-fit, minmax(6rem, 1fr))",
         "make-equal-cards-1": "repeat(auto-fit, minmax(5rem, 1fr))",
-        "make-equal-cards-2": "repeat(auto-fit, minmax(4rem, 1fr))",
+        "make-equal-cards-2": "repeat(auto-fit, minmax(3rem, 1fr))",
         "pricing-card": "repeat(auto-fit, minmax(7rem, 1fr))",
       },
       borderRadius: {
@@ -33,6 +33,7 @@ module.exports = {
         userBigImg: "9rem",
         roundImg: "max(5vh, 4rem)",
         bottonCon: "max(90%, 600px)",
+        headerContent: "75%",
       },
       lineHeight: {
         customOne: "1.1",

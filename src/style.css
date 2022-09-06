@@ -22,7 +22,7 @@
   --clr11: #c6c6c6;
 }
 .flex-center {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center gap-4;
 }
 body {
   @apply bg-[#101521];
@@ -86,9 +86,8 @@ body {
   max-width: 70%;
 }
 .header_content {
-  position: relative;
-  max-width: 75%;
-  z-index: 100;
+  @apply relative max-w-headerContent border-2 border-gray-200;
+  z-index: 99;
 }
 .button_container {
   @apply max-w-bottonCon gap-x-4;
@@ -96,46 +95,22 @@ body {
 
 /* Todo: modified */
 .round_img {
-  @apply absolute aspect-square rounded-full overflow-hidden outline-4 outline-yellow-600 outline-offset-8 max-w-roundImg;
+  @apply absolute aspect-square rounded-full overflow-hidden  outline-offset-8 max-w-roundImg outline-4;
+  outline: solid #fbc941;
   top: 5%;
   right: -5%;
 }
-/* .round_img {
-  position: absolute;
-  width: max(5vh, 4rem);
-  aspect-ratio: 1 /1;
-  border-radius: 50%;
-  overflow: hidden;
-  outline: 3px solid #e68e09;
-  outline-offset: 10px;
-  top: 5%;
-  right: -5%;
-} */
+
 /* Todo: modified */
 .round_img img {
   @apply w-full h-full object-cover;
 }
-/* .round_img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
 /* Todo: Modified */
 .user_img1 {
   @apply absolute h-32 rounded-lg overflow-hidden max-w-personImg;
   top: 30%;
   right: -8%;
 }
-/* .user_img1 {
-  max-width: 5rem;
-  height: 8rem;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  position: absolute;
-  top: 30%;
-  right: -8%;
-} */
 .user_img1 img {
   @apply w-full h-full object-cover;
 }
@@ -144,13 +119,6 @@ body {
   right: 0%;
   bottom: 0%;
 }
-/* .user_img {
-  position: absolute;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  right: 0%;
-  bottom: 0%;
-} */
 .user_big_img {
   @apply max-w-userBigImg h-52;
 }
@@ -158,11 +126,6 @@ body {
 .user_img img {
   @apply h-full w-full object-cover;
 }
-/* .user_img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-} */
 @media (max-width: 650px) {
   .cards {
     max-width: 95%;
@@ -235,13 +198,6 @@ body {
 .desk_nav li {
   @apply relative pb-2 text-[#c6c6c6] font-bold transition-colors duration-200 ease-in hover:text-[#c9a84e];
 }
-/* .desk_nav li {
-  position: relative;
-  padding-bottom: 0.5rem;
-  color: #c6c6c6;
-  font-weight: bold;
-  transition: color 300ms ease-in;
-} */
 .desk_nav li::after {
   position: absolute;
   content: "";
@@ -258,9 +214,6 @@ body {
   opacity: 1;
   background-color: #add4b2;
 }
-/* .desk_nav li:hover {
-  color: #c9a84e;
-} */
 /* Todo: Modified */
 .mob_nav-tailwind {
   @apply fixed h-screen text-[#c6c6c6] w-full pt-20 pl-8 py-40 px-8 transition-transform duration-300 ease-in;
@@ -306,20 +259,11 @@ body {
   @apply text-resFont-mob-nav font-bold transition-colors duration-300 ease-in hover:text-[#c9a84e];
 }
 
-/* .mob_nav li a {
-  font-size: clamp(0.8rem, 5vw + 0.8rem, 1.2rem);
-  font-weight: bold;
-  transition: color 300ms ease-in;
-} */
-/* .mob_nav li a:hover {
-  color: #c9a84e;
-} */
-
 .nav_content {
   @apply flex items-center justify-between gap-2 relative;
 }
 .mobile_nav {
-  z-index: 999;
+  /* z-index: 999; */
 }
 @media (min-width: 639px) {
   .mob_nav {
@@ -353,30 +297,19 @@ body {
 .money_title {
   @apply font-bold capitalize;
 }
-.money_play-btn-tailwind {
-  @apply absolute bg-[#2a6646] w-28 h-28 rounded-full cursor-pointer outline-2 outline-transparent outline-offset-8 transition-outline duration-300 ease-in hover:outline-2 hover:outline-[#fbc941];
-}
-/* .money_play-btn {
-  position: absolute;
+.money_play-btn {
+  @apply absolute bg-[#2a6646] w-28 h-28 rounded-full cursor-pointer outline-4 outline-transparent outline-offset-8 transition-outline duration-300 ease-in hover:outline-4;
   left: 70%;
   top: 0%;
+  z-index: 999;
   transform: translate(-50%, -50%);
-  background-color: green;
-  width: 7rem;
-  height: 7rem;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 9999;
-  outline: 2px solid transparent;
-  outline-offset: 7px;
-  transition: outline 300ms ease-in;
-} */
+}
 .money_play-btn i {
   @apply text-resFont-money_play-i text-[#fbc941];
 }
-/* .money_play-btn:hover {
-  outline: 2px solid goldenrod;
-} */
+.money_play-btn:hover {
+  outline: solid goldenrod;
+}
 
 .money_title {
   /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
@@ -419,7 +352,7 @@ body {
 
 /* Todo: Modified */
 .card_container {
-  @apply relative bg-[#0d0d0d] p-48 mt-20 rounded-lg;
+  @apply relative bg-[#3f424c] p-48 mt-20 rounded-lg;
 }
 
 /* .card_container {
@@ -431,19 +364,19 @@ body {
 } */
 /* Todo: Modified */
 .personal_comment {
-  @apply absolute w-max max-w-xs p-4 rounded-lg;
+  @apply absolute w-max max-w-xs p-4 rounded-lg bg-[#c9a84e];
 }
 /* .personal_comment {
+  position: absolute;
   background-color: #e68e09;
   width: max-content;
   max-width: 21rem;
-  display: flex;
   gap: 1rem;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
   border-radius: 0.5rem;
-  position: absolute;
 } */
 .person_text {
   width: 100%;
@@ -504,13 +437,10 @@ body {
 }
 
 .client-btn_container {
-  position: absolute;
+  @apply absolute flex gap-8;
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  /* align-items: center; */
-  gap: 2rem;
 }
 /* Todo: Modified */
 .client-btn {
