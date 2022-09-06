@@ -91,8 +91,7 @@ body {
   z-index: 100;
 }
 .button_container {
-  width: max(90%, 600px);
-  column-gap: 1rem;
+  @apply max-w-bottonCon gap-x-4;
 }
 
 /* Todo: modified */
@@ -259,9 +258,9 @@ body {
   opacity: 1;
   background-color: #add4b2;
 }
-.desk_nav li:hover {
+/* .desk_nav li:hover {
   color: #c9a84e;
-}
+} */
 /* Todo: Modified */
 .mob_nav-tailwind {
   @apply fixed h-screen text-[#c6c6c6] w-full pt-20 pl-8 py-40 px-8 transition-transform duration-300 ease-in;
@@ -270,7 +269,7 @@ body {
   z-index: -100;
   transform: translateX(100%);
 }
-/* .mob_nav {
+.mob_nav {
   position: fixed;
   height: 100vh;
   background-color: hsla(225, 9%, 27%, 0.455);
@@ -287,7 +286,7 @@ body {
 
   transition: transform 300ms ease-in;
   border-bottom-left-radius: 15rem;
-} */
+}
 .mob_nav-animation {
   transform: translateX(0%);
 }

@@ -1316,7 +1316,7 @@ body {
 }
 
 .button_container {
-  width: max(90%, 600px);
+  max-width: max(90%, 600px);
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
@@ -1555,9 +1555,9 @@ body {
   background-color: #add4b2;
 }
 
-.desk_nav li:hover {
+/* .desk_nav li:hover {
   color: #c9a84e;
-}
+} */
 
 /* Todo: Modified */
 
@@ -1581,24 +1581,25 @@ body {
   transform: translateX(100%);
 }
 
-/* .mob_nav {
+.mob_nav {
   position: fixed;
   height: 100vh;
   background-color: hsla(225, 9%, 27%, 0.455);
   color: #c6c6c6;
   width: 100%;
   inset: 0rem 0rem 0rem 40%;
-  padding-block-start: 5rem;
-  padding-inline-start: 2rem;
+  -webkit-padding-before: 5rem;
+          padding-block-start: 5rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
   right: 0%;
   top: 0%;
   z-index: -100;
   padding: 10rem 2rem;
   transform: translateX(100%);
-
   transition: transform 300ms ease-in;
   border-bottom-left-radius: 15rem;
-} */
+}
 
 .mob_nav-animation {
   transform: translateX(0%);

@@ -32,6 +32,7 @@ module.exports = {
         personImg: "5rem",
         userBigImg: "9rem",
         roundImg: "max(5vh, 4rem)",
+        bottonCon: "max(90%, 600px)",
       },
       lineHeight: {
         customOne: "1.1",
