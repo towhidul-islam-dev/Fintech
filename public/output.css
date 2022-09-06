@@ -1589,7 +1589,8 @@ body {
 }
 
 .mobile_nav {
-  /* z-index: 999; */
+  z-index: 9999;
+  border: 2px solid white;
 }
 
 @media (min-width: 639px) {
@@ -1643,6 +1644,9 @@ body {
   position: absolute;
   height: 7rem;
   width: 7rem;
+  --tw-translate-x: -50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   cursor: pointer;
   border-radius: 9999px;
   --tw-bg-opacity: 1;
@@ -1663,8 +1667,7 @@ body {
 .money_play-btn {
   left: 70%;
   top: 0%;
-  z-index: 999;
-  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .money_play-btn i {
@@ -1678,7 +1681,6 @@ body {
 }
 
 .money_title {
-  /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
   font-size: clamp(1rem, 3vw + 1rem, 4rem);
   line-height: 1.1;
 }
@@ -1691,12 +1693,6 @@ body {
   padding-bottom: 2rem;
   padding-left: 1rem;
 }
-
-/* .money_text {
-  position: relative;
-  padding-left: 1rem;
-  padding-block: 2rem;
-} */
 
 .money_text::before {
   position: absolute;
@@ -1726,8 +1722,6 @@ body {
 
 /* ? ClientFeedback Section Start */
 
-/* Todo: Modified */
-
 .card_container {
   position: relative;
   margin-top: 5rem;
@@ -1736,16 +1730,6 @@ body {
   background-color: rgb(63 66 76 / var(--tw-bg-opacity));
   padding: 12rem;
 }
-
-/* .card_container {
-  background-color: #262e36;
-  position: relative;
-  padding: 12rem;
-  margin-top: 5rem;
-  border-radius: 0.5rem;
-} */
-
-/* Todo: Modified */
 
 .personal_comment {
   position: absolute;
@@ -1758,19 +1742,6 @@ body {
   background-color: rgb(201 168 78 / var(--tw-bg-opacity));
   padding: 1rem;
 }
-
-/* .personal_comment {
-  position: absolute;
-  background-color: #e68e09;
-  width: max-content;
-  max-width: 21rem;
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 0.5rem;
-} */
 
 .person_text {
   width: 100%;
@@ -1787,10 +1758,6 @@ body {
   line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  /*   color: white;
-  word-wrap: break-word;
-  line-height: 1.2;
-  margin-bottom: 0.5rem; */
 }
 
 .person_text h2 {
@@ -1799,9 +1766,6 @@ body {
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  /*   font-size: 1rem;
-  color: #ffffff;
-  font-weight: bold; */
 }
 
 .person_img {
@@ -1810,13 +1774,6 @@ body {
   overflow: hidden;
   border-radius: 9999px;
 }
-
-/* .person_img {
-  max-width: 5rem;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  overflow: hidden;
-} */
 
 .person_img img {
   -o-object-fit: cover;
@@ -1887,25 +1844,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
-/* .client-btn {
-  border: 2px solid transparent;
-  outline: none;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: border 300ms ease-in, background-color 300ms ease-in,
-    color 300ms ease-in;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
 .btn-1 {
   --tw-bg-opacity: 1;
   background-color: rgb(42 102 70 / var(--tw-bg-opacity));
@@ -1933,18 +1871,6 @@ body {
   --tw-text-opacity: 1;
   color: rgb(242 238 238 / var(--tw-text-opacity));
 }
-
-/* .btn-1:hover {
-  color: rgb(245, 242, 242);
-  border: 2px solid green;
-  background-color: transparent;
-} */
-
-/* .btn-2:hover {
-  color: rgb(245, 242, 242);
-  border: 2px solid orange;
-  background-color: transparent;
-} */
 
 .ratings i {
   font-size: 0.8rem;
@@ -2004,8 +1930,6 @@ body {
 
 /* ! ClientFeedback Section End */
 
-/* Todo: Modified */
-
 .pricing_container1 {
   display: flex;
   flex-wrap: wrap;
@@ -2013,14 +1937,6 @@ body {
   justify-content: space-evenly;
   gap: 4rem;
 }
-
-/* .pricing_container1 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
-  align-items: center;
-  justify-content: space-evenly;
-} */
 
 .pricing_container1 * {
   flex-basis: 20%;

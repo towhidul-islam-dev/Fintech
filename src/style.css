@@ -263,7 +263,8 @@ body {
   @apply flex items-center justify-between gap-2 relative;
 }
 .mobile_nav {
-  /* z-index: 999; */
+  z-index: 9999;
+  border: 2px solid white;
 }
 @media (min-width: 639px) {
   .mob_nav {
@@ -298,11 +299,10 @@ body {
   @apply font-bold capitalize;
 }
 .money_play-btn {
-  @apply absolute bg-[#2a6646] w-28 h-28 rounded-full cursor-pointer outline-4 outline-transparent outline-offset-8 transition-outline duration-300 ease-in hover:outline-4;
+  @apply absolute bg-[#2a6646] w-28 h-28 rounded-full cursor-pointer outline-4 outline-transparent outline-offset-8 transition-outline -translate-x-1/2 -translate-y-1/2 duration-300 ease-in hover:outline-4;
   left: 70%;
   top: 0%;
-  z-index: 999;
-  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 .money_play-btn i {
   @apply text-resFont-money_play-i text-[#fbc941];
@@ -312,7 +312,6 @@ body {
 }
 
 .money_title {
-  /* font-size: clamp(1rem, 3vw + 1rem, 4rem); */
   @apply leading-customOne text-resFont-money_title;
 }
 /* Todo: Modified */
@@ -320,11 +319,6 @@ body {
   @apply relative pl-4 py-8;
 }
 
-/* .money_text {
-  position: relative;
-  padding-left: 1rem;
-  padding-block: 2rem;
-} */
 .money_text::before {
   position: absolute;
   content: "";
@@ -350,34 +344,13 @@ body {
 
 /* ? ClientFeedback Section Start */
 
-/* Todo: Modified */
 .card_container {
   @apply relative bg-[#3f424c] p-48 mt-20 rounded-lg;
 }
 
-/* .card_container {
-  background-color: #262e36;
-  position: relative;
-  padding: 12rem;
-  margin-top: 5rem;
-  border-radius: 0.5rem;
-} */
-/* Todo: Modified */
 .personal_comment {
   @apply absolute w-max max-w-xs p-4 rounded-lg bg-[#c9a84e];
 }
-/* .personal_comment {
-  position: absolute;
-  background-color: #e68e09;
-  width: max-content;
-  max-width: 21rem;
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 0.5rem;
-} */
 .person_text {
   width: 100%;
 }
@@ -386,26 +359,13 @@ body {
 }
 .person_text p {
   @apply text-[#ffffff] break-words leading-5 mb-2;
-  /*   color: white;
-  word-wrap: break-word;
-  line-height: 1.2;
-  margin-bottom: 0.5rem; */
 }
 .person_text h2 {
   @apply text-base text-[#ffffff] font-bold;
-  /*   font-size: 1rem;
-  color: #ffffff;
-  font-weight: bold; */
 }
 .person_img {
   @apply max-w-personImg aspect-square rounded-full overflow-hidden;
 }
-/* .person_img {
-  max-width: 5rem;
-  aspect-ratio: 1 / 1;
-  border-radius: 50%;
-  overflow: hidden;
-} */
 .person_img img {
   object-fit: cover;
 }
@@ -446,40 +406,12 @@ body {
 .client-btn {
   @apply border-2 border-transparent outline-none w-12 h-12 font-bold rounded-full cursor-pointer p-4 text-center uppercase transition-border duration-300 ease-in transition-colors duration-300 ease-in;
 }
-/* .client-btn {
-  border: 2px solid transparent;
-  outline: none;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  cursor: pointer;
-  padding: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: border 300ms ease-in, background-color 300ms ease-in,
-    color 300ms ease-in;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 .btn-1 {
   @apply bg-[#2a6646] hover:text-[#f2eeee] hover:border-2 hover:border-[#2a6646] hover:bg-transparent;
 }
 .btn-2 {
   @apply bg-[#ffcb66] hover:text-[#f2eeee] hover:border-2 hover:border-[#fbc941] hover:bg-transparent;
 }
-/* .btn-1:hover {
-  color: rgb(245, 242, 242);
-  border: 2px solid green;
-  background-color: transparent;
-} */
-/* .btn-2:hover {
-  color: rgb(245, 242, 242);
-  border: 2px solid orange;
-  background-color: transparent;
-} */
 .ratings i {
   font-size: 0.8rem;
 }
@@ -530,17 +462,9 @@ body {
 }
 
 /* ! ClientFeedback Section End */
-/* Todo: Modified */
 .pricing_container1 {
   @apply flex items-center justify-evenly gap-16 flex-wrap;
 }
-/* .pricing_container1 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
-  align-items: center;
-  justify-content: space-evenly;
-} */
 .pricing_container1 * {
   flex-basis: 20%;
 }
