@@ -621,10 +621,6 @@ video {
   z-index: 10;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
 .z-20 {
   z-index: 20;
 }
@@ -655,10 +651,6 @@ video {
   margin-top: 4rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mt-32 {
   margin-top: 8rem;
 }
@@ -681,6 +673,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .mt-12 {
@@ -727,16 +723,8 @@ video {
   max-height: 15rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-10 {
   width: 2.5rem;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .w-max {
@@ -747,6 +735,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-8 {
@@ -789,20 +781,12 @@ video {
   cursor: pointer;
 }
 
-.grid-cols-make-equal-cards {
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-}
-
 .grid-cols-make-equal-cards-1 {
   grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
 }
 
 .grid-cols-make-equal-cards-2 {
   grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
-}
-
-.grid-cols-make-equal-cards-operator {
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
 }
 
 .flex-col {
@@ -891,21 +875,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#2a6646\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(42 102 70 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#c6c6c6\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(198 198 198 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#fbc941\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 201 65 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#f6bde9\] {
   --tw-bg-opacity: 1;
   background-color: rgb(246 189 233 / var(--tw-bg-opacity));
@@ -919,6 +888,11 @@ video {
 .bg-\[\#acd8b5\] {
   --tw-bg-opacity: 1;
   background-color: rgb(172 216 181 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#2a6646\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 102 70 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#ffcb66\] {
@@ -957,11 +931,6 @@ video {
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 .py-32 {
@@ -1004,6 +973,11 @@ video {
   padding-bottom: 6rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pt-36 {
   padding-top: 9rem;
 }
@@ -1039,11 +1013,6 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
 }
 
 .text-2xl {
@@ -1308,6 +1277,18 @@ body {
   max-width: 70%;
 }
 
+.operator {
+  margin-bottom: 1rem;
+  display: flex;
+  aspect-ratio: 1 / 1;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(198 198 198 / var(--tw-bg-opacity));
+}
+
 .header-text {
   overflow-wrap: break-word;
   font-size: clamp(0.7rem, 3vw, 2rem);
@@ -1315,6 +1296,9 @@ body {
 }
 
 .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+  gap: 1rem;
   max-width: 70%;
 }
 
@@ -1322,6 +1306,30 @@ body {
   position: relative;
   z-index: 20;
   max-width: 75%;
+}
+
+.header_card {
+  margin-top: 4rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(42 102 70 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header_card-middle {
+  margin-top: 4rem;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 201 65 / var(--tw-bg-opacity));
+  padding: 1.5rem;
+  text-align: center;
 }
 
 .button_container {
@@ -1469,6 +1477,24 @@ body {
 
 /* ! Header Section End */
 
+/* ? Nav Section Start */
+
+.nav {
+  position: absolute;
+  top: 0px;
+  z-index: 30;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.nav_link {
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-transform: capitalize;
+}
+
 .desk_nav li {
   position: relative;
   padding-bottom: 0.5rem;
@@ -1581,8 +1607,6 @@ body {
     max-width: 90%;
   }
 }
-
-/* ? Nav Section Start */
 
 /* ! Nav Section End */
 
@@ -1898,6 +1922,17 @@ body {
   }
 }
 
+/* * Blog Section Start */
+
+.blog_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  place-items: center;
+  gap: 2rem;
+}
+
+/* ! Blog Section End */
+
 /* ! ClientFeedback Section End */
 
 .pricing_container1 {
@@ -1928,6 +1963,17 @@ body {
     flex-basis: 100%;
   }
 }
+
+/* * Footer Section Start */
+
+.footer_icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+/*! Footer Section End */
 
 /* ?? Patter Design Start */
 

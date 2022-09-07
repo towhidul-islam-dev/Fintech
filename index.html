@@ -19,7 +19,7 @@
 
     <header class="pt-36 relative z-10 overflow-x-hidden">
       <!-- ? Nav Section Start -->
-      <nav class="py-8 absolute top-0 w-full z-30">
+      <nav class="nav">
         <div class="container text-gray-200">
           <div class="nav_content">
             <div class="nav_logo">
@@ -31,52 +31,36 @@
               class="nav_items desk_nav sm:flex items-center hidden gap-4 relative"
             >
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >About us</a
-                >
+                <a class="nav_link" href="#">About us</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >personal</a
-                >
+                <a class="nav_link" href="#">personal</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >business</a
-                >
+                <a class="nav_link" href="#">business</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#">Blog</a>
+                <a class="nav_link" href="#">Blog</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >say hi</a
-                >
+                <a class="nav_link" href="#">say hi</a>
               </li>
             </ul>
             <ul class="nav_items mob_nav fixed items-center hidden gap-4">
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >About us</a
-                >
+                <a class="nav_link" href="#">About us</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >personal</a
-                >
+                <a class="nav_link" href="#">personal</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >business</a
-                >
+                <a class="nav_link" href="#">business</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#">Blog</a>
+                <a class="nav_link" href="#">Blog</a>
               </li>
               <li>
-                <a class="capitalize text-base cursor-pointer" href="#"
-                  >say hi</a
-                >
+                <a class="nav_link" href="#">say hi</a>
               </li>
             </ul>
             <div class="mobile_nav">
@@ -138,13 +122,9 @@
             <img src="http://unsplash.it/500/500?image=388" alt="frog" />
           </div>
         </div>
-        <div class="cards grid grid-cols-make-equal-cards-operator gap-4">
-          <div
-            class="header_card max-w-fit text-center mt-16 bg-[#2a6646] p-6 rounded-lg"
-          >
-            <div
-              class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
-            >
+        <div class="cards">
+          <div class="header_card">
+            <div class="operator">
               <button class="operator_btn" type="button">
                 <a href="#" class="cursor-pointer">
                   <img
@@ -157,12 +137,8 @@
             </div>
             <h2 class="capitalize text-gray-200 font-bold">Airtel</h2>
           </div>
-          <div
-            class="header_card max-w-fit text-center mt-16 bg-[#fbc941] p-6 rounded-lg"
-          >
-            <div
-              class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
-            >
+          <div class="header_card header_card-middle">
+            <div class="operator">
               <button class="operator_btn" type="button">
                 <a href="#" class="cursor-pointer">
                   <img
@@ -178,9 +154,7 @@
           <div
             class="header_card max-w-fit text-center mt-16 bg-[#f6bde9] p-6 rounded-lg"
           >
-            <div
-              class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
-            >
+            <div class="operator">
               <button class="operator_btn" type="button">
                 <a href="#" class="cursor-pointer">
                   <img
@@ -196,9 +170,7 @@
           <div
             class="header_card max-w-fit text-center mt-16 bg-[#cfc6ff] p-6 rounded-lg"
           >
-            <div
-              class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
-            >
+            <div class="operator">
               <button class="operator_btn" type="button">
                 <a href="#" class="cursor-pointer">
                   <img
@@ -214,9 +186,7 @@
           <div
             class="header_card max-w-fit text-center mt-16 bg-[#acd8b5] p-6 rounded-lg"
           >
-            <div
-              class="bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center"
-            >
+            <div class="operator">
               <button class="operator_btn" type="button">
                 <a href="#" class="cursor-pointer">
                   <img
@@ -542,7 +512,7 @@
             product or service.
           </p>
         </div>
-        <div class="grid grid-cols-make-equal-cards gap-8 place-items-center">
+        <div class="blog_cards">
           <div class="main_card max-w-sm">
             <div class="card_content text-gray-100">
               <div class="card_img max-w-sm max-h-60 overflow-hidden relative">
@@ -678,36 +648,36 @@
                 Monday to Friday.
               </p>
               <div class="grid grid-cols-make-equal-cards-2 gap-2 mt-12">
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"><img src="./assets/bkash.png" alt="bkash" /></a>
                 </div>
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"
                     ><img
                       src="./assets/americanexpress.png"
                       alt="american express"
                   /></a>
                 </div>
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"
                     ><img src="./assets/visacard.png" alt="visacard"
                   /></a>
                 </div>
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"><img src="./assets/datch.png" alt="datch" /></a>
                 </div>
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"
                     ><img src="./assets/islamibank.png" alt="islamibank"
                   /></a>
                 </div>
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"><img src="./assets/Nagad.png" alt="nagad" /></a>
                 </div>
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"><img src="./assets/easter.png" alt="easter" /></a>
                 </div>
-                <div class="w-full flex items-center justify-center">
+                <div class="footer_icons">
                   <a href="#"><img src="./assets/paypal.png" alt="paypal" /></a>
                 </div>
               </div>

@@ -79,14 +79,24 @@ body {
 .header-text-container {
   max-width: 70%;
 }
+.operator {
+  @apply bg-[#c6c6c6] w-16 mb-4 aspect-square rounded-full flex items-center justify-center;
+}
 .header-text {
   @apply text-header-text break-words leading-customTwo;
 }
 .cards {
+  @apply grid grid-cols-make-equal-cards-operator gap-4;
   max-width: 70%;
 }
 .header_content {
   @apply relative max-w-headerContent z-20;
+}
+.header_card {
+  @apply max-w-fit text-center mt-16 bg-[#2a6646] p-6 rounded-lg;
+}
+.header_card-middle {
+  @apply max-w-fit text-center mt-16 bg-[#fbc941] p-6 rounded-lg;
 }
 .button_container {
   @apply max-w-bottonCon gap-x-4;
@@ -190,6 +200,13 @@ body {
 }
 
 /* ! Header Section End */
+/* ? Nav Section Start */
+.nav {
+  @apply py-8 absolute top-0 w-full z-30;
+}
+.nav_link {
+  @apply capitalize text-base cursor-pointer;
+}
 .desk_nav li {
   @apply relative pb-2 text-[#c6c6c6] font-bold transition-colors duration-200 ease-in hover:text-[#c9a84e];
 }
@@ -250,8 +267,6 @@ body {
     max-width: 90%;
   }
 }
-
-/* ? Nav Section Start */
 
 /* ! Nav Section End */
 .hero_title {
@@ -432,6 +447,11 @@ body {
   }
 }
 
+/* * Blog Section Start */
+.blog_cards {
+  @apply grid grid-cols-make-equal-cards gap-8 place-items-center;
+}
+/* ! Blog Section End */
 /* ! ClientFeedback Section End */
 .pricing_container1 {
   @apply flex items-center justify-evenly gap-16 flex-wrap;
@@ -454,6 +474,12 @@ body {
     flex-basis: 100%;
   }
 }
+
+/* * Footer Section Start */
+.footer_icons {
+  @apply w-full flex items-center justify-center;
+}
+/*! Footer Section End */
 
 /* ?? Patter Design Start */
 
