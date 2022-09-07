@@ -42,6 +42,10 @@ module.exports = {
         customTwo: "1.3",
         customThree: "1.2",
       },
+      translate: {
+        moveBottom: "5%",
+        moveRight: "5%",
+      },
     },
   },
   plugins: [],
