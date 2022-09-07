@@ -86,17 +86,17 @@ body {
   @apply text-header-text break-words leading-customTwo;
 }
 .cards {
-  @apply grid grid-cols-make-equal-cards-operator gap-4;
+  @apply grid grid-cols-make-equal-cards-operator gap-4 border-none mt-16;
   max-width: 70%;
 }
 .header_content {
   @apply relative max-w-headerContent z-20;
 }
 .header_card {
-  @apply max-w-fit text-center mt-16 bg-[#2a6646] p-6 rounded-lg;
+  @apply h-max text-center  p-6 rounded-lg;
 }
 .header_card-middle {
-  @apply max-w-fit text-center mt-16 bg-[#fbc941] p-6 rounded-lg;
+  @apply bg-[#fbc941];
 }
 .button_container {
   @apply max-w-bottonCon gap-x-4;
