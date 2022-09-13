@@ -61,6 +61,9 @@ body {
   left: 0%;
   transform: rotate(-25deg);
 }
+.header {
+  @apply pt-36 relative z-10 overflow-x-hidden;
+}
 .fa-arrow-up {
   @apply transform rotate-45 text-[#101521] ml-2;
 }
@@ -93,7 +96,7 @@ body {
   @apply relative max-w-headerContent z-20;
 }
 .header_card {
-  @apply h-max text-center  p-6 rounded-lg;
+  @apply h-max text-center  p-6 rounded-lg flex-col;
 }
 .header_card-middle {
   @apply bg-[#fbc941];
@@ -121,9 +124,9 @@ body {
   @apply w-full h-full object-cover;
 }
 .user_img {
-  @apply absolute rounded-lg overflow-hidden;
-  right: 0%;
-  bottom: 0%;
+  @apply absolute rounded-lg overflow-hidden bottom-0 right-0 lg:right-96;
+  /* right: 0%; */
+  /* bottom: 0%; */
   /* z-index: -1; */
 }
 .user_big_img {
